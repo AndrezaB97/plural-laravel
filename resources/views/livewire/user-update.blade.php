@@ -60,7 +60,7 @@
                         <div class="pb-3">
                             <label>CPF: </label>
                             <input wire:model="cpf"
-                                class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:shadow-outline cpf"
+                                class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:shadow-outline"
                                 type="text" placeholder="" name="cpf" value="{{ old('cpf') }}" />
                             @error('cpf')
                                 <p class="text-red-500 mt-1">{{ $message }}</p>
@@ -150,7 +150,7 @@
                             <button
                                 class="flex px-6 py-3 text-white bg-indigo-500 rounded-md hover:bg-indigo-600 hover:text-white focus:outline-none focus:shadow-outline focus:border-indigo-300"
                                 type="submit">
-                                <span class="self-center float-left ml-3 text-base font-medium">Enviar</span>
+                                <span class="self-center float-left ml-3 text-base font-medium">ATUALIZAR DADOS</span>
                             </button>
                         </div>
                     </form>
@@ -159,14 +159,3 @@
         </div>
     </section>
 </div>
-
-<script type="text-javascript">
-    $(document).ready(function(){
-        $('.date').mask('00/00/0000');
-        $('.time').mask('00:00:00');
-        $('.cep').mask('00000-000');
-        $('.phone').mask('(00) 00000-0000');
-        $('.cpf').mask('000.000.000-00');
-        $('.money').mask('000.000.000.000,00');$('.date').mask('00/00/0000')
-    });
-</script>

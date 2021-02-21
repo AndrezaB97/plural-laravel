@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use App\Http\Livewire\UserForm;
 
 class ExampleTest extends TestCase
 {
@@ -14,8 +15,8 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $userForm = new UserForm;
+        
+        dd($userForm);
     }
 }

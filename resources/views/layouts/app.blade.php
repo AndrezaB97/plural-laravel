@@ -27,8 +27,7 @@
 
     <script type="text/javascript">
         $('[name ="cpf"]').mask('000.000.000-00');
-        $('[name ="cep"]').mask('00000-000');
-        $('[name ="cep"]').mask('00000-000');
+        $('[name ="zip_code"]').mask('00000-000');
         $('[name ="phone"]').mask('00000-0000');
     </script>
 

@@ -34,7 +34,7 @@
         <p class="text-red-500 mt-1">{{ $message }}</p>
     @enderror
 
-    <x-input-text label="CEP: " typeInput="text" placeholder="" name="zip_code" />
+    <x-input-text label="CEP: " typeInput="text" placeholder="" name="zip_code" wire:keydown.enter="getAdders"/>
     @error('zip_code')
         <p class="text-red-500 mt-1">{{ $message }}</p>
     @enderror
@@ -66,3 +66,4 @@
 
     <x-input-checkbox name="terms" type="checkbox"/>
 </div>
+

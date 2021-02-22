@@ -4,6 +4,12 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css">
 
+    <style>
+        h1 {
+            font-size: 40px
+        }
+    </style>
+
     <!-- Include the Livewire styles -->
     @livewireStyles
 </head>
@@ -30,7 +36,6 @@
         $('[name ="zip_code"]').mask('00000-000');
         $('[name ="phone"]').mask('00000-0000');
     </script>
-
 </body>
 
 </html>

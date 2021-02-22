@@ -28,9 +28,9 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function user_form_update_sends()
+    public function user_form_sends()
     {
-        Livewire::test(UserUpdate::class)->set('name', 'Teste')
+        Livewire::test(UserForm::class)->set('name', 'Teste')
         ->set('zip_code', '22222-222')
         ->set('cpf', '333.333.444-09')
         ->set('road', 'Rua Teste')

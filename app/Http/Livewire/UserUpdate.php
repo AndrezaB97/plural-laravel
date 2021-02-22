@@ -59,6 +59,7 @@ class UserUpdate extends Component
         $user = User::find($id);
         $user->fill($validatedData);
         $user->save();
+        session()->flash('message', 'Usuário atualizado com sucesso.');
     }
 
     public function updated($fields)

@@ -60,6 +60,8 @@ class UserForm extends Component
         ]);
 
         User::create($validatedData);
+
+        session()->flash('message', 'Usuário criado com sucesso.');
     }
 
     public function render()
